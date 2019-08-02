@@ -6,7 +6,8 @@ namespace democonsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Fascinate!!");
+            string message = "Fascinate the World!";
+            Console.WriteLine(message);
         }
     }
 }
