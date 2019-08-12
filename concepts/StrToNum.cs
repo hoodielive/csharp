@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using Internal;
 using System;
 
 namespace Clones
@@ -6,6 +8,8 @@ namespace Clones
     {
         static void Main(string[] args)
         {
+            Debug.Log("Yo, what is your name wooty?"); 
+            string input = Console.ReadLine(); 
             int convertedInputToNumber; 
             int.TryParse(input, out convertedInputToNumber);
 
