@@ -1,6 +1,7 @@
-using System.Diagnostics;
-using Internal;
 using System;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Clones
 {
@@ -8,7 +9,8 @@ namespace Clones
     {
         static void Main(string[] args)
         {
-            Debug.Log("Yo, what is your name wooty?"); 
+            string message = ("Yo, what is your name wooty?"); 
+            Debug.Log(message);
             string input = Console.ReadLine(); 
             int convertedInputToNumber; 
             int.TryParse(input, out convertedInputToNumber);
