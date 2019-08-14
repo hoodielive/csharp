@@ -1,9 +1,15 @@
 using System;
 
-class Untitled
+class MyApp
 {
-	static void Main(string[] args)
+	static void Main() 
 	{
-		
+		MyApp  m = new MyApp(); 
+		m.MyPrint(); 
+	}
+	
+	void MyPrint()
+	{
+		Console.WriteLine("Hello, everyone!"); 
 	}
 }
