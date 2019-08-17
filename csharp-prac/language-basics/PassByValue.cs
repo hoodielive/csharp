@@ -2,7 +2,6 @@ using System;
 
 class PassByValue
 {
-
 	// void Set(int i) { i = 10; }
 	void Set(int[] i) { i = new int[] { 10 }; }
 	
