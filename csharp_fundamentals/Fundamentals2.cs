@@ -25,8 +25,11 @@ namespace ProgrammingGuide
 		static void Main(string[] args)
 		{
 			CustomClass custClass = new CustomClass(); 
+
 			custClass.Number = 27;
+
 			int result = custClass.Multiply(24);
+
 			Console.WriteLine($"The result is {result}."); 
 		}
 	}
