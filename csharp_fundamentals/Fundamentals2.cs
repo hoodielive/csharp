@@ -8,15 +8,16 @@ namespace ProgrammingGuide
 		public int Number { get; set; } 
 
 		// Method
-		public int Multiply (int num) 
+		public int Multiply(int num) 
 		{
 			return num * Number; 
 		}
 
 		// Instance Constructor
-		public CustomClass()
+		public CustomClass(int Number)
 		{
 			Number = 0; 
+			return Number;
 		}
 	}
 
