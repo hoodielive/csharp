@@ -1,15 +1,15 @@
-using System.Collections; 
-using System.Collections.Generic; 
-using UnityEngine; 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Player: MonoBehaviour
+public class Player : MonoBehaviour
 {
-	public vector3 startPostion; 
+	public vector3 startPostion;
 
 	startPosition = new Vector3(0, 0, 0);
-	// use initialization 
+	// use initialization
 	void Start()
 	{
-		transform.postion = startPosition; 
+		transform.postion = startPosition;
 	}
 }
