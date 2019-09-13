@@ -21,15 +21,9 @@ public class Program
     {
         Console.WriteLine("Howdy there my friend!");
         
-        Complex a = new Complex()
-        {
-           Real = 1, Imaginary = 2
-        };
+        Complex a = new Complex() { Real = 1, Imaginary = 2 };
         
-        Complex b = new Complex()
-        {
-            Real = 4, Imaginary = 6
-        };
+        Complex b = new Complex() { Real = 4, Imaginary = 6 };
 
         Complex c = a + b; 
     }
