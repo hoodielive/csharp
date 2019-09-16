@@ -14,7 +14,17 @@ namespace Perusals
             return names; 
         }
 
-        static void PrintNames(string[] names)
+        static ArrayList TheGenerator()
+        {
+            ArrayList names = new ArrayList();
+            names.Add("Gamma");
+            names.Add("Vlissides");
+            names.Add("Johnson");
+            names.Add("Helm");
+            return names;
+        }
+        
+        static void PrintNames(ArrayList names)
         {
             foreach (string name in names)
             {
@@ -24,7 +34,7 @@ namespace Perusals
         
         public static void Main(string[] args)
         {
-            PrintNames(GenerateNames());
+            PrintNames(TheGenerator());
         }
     }
 }
