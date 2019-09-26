@@ -1,11 +1,10 @@
 using System;
-using System.Reflection;
 
 namespace Perusals
 {
     public class Calculate
     {
-        static void Pain()
+        int Pain()
         {
             Console.WriteLine("This program calculates" + "the area of a rectangle or a triangle");
             Console.WriteLine("Enter a and b (for rectangle) " + "or a and h (for triangle)");
@@ -18,12 +17,14 @@ namespace Perusals
             int choice = int.Parse(Console.ReadLine());
             double area = (double) (a * b) / choice; 
             Console.WriteLine("The area of your figure is " + area);
+
+            return 0;
         }
 
-        class RunPrograms()
+        static void MainWitch(string[] args)
         {
             Calculate p = new Calculate();
-            p.Pain();
+            p.Pain(); 
         }
     }
 }
