@@ -8,25 +8,27 @@ namespace FitnessFrog
         {
             // Prompt the user for minutes exercised
 
-            int runningTotal = 0;
+           double runningTotal = 0;
             
-            bool keepGoing = true;
+           bool keepGoing = true;
             
            while(keepGoing)
            {
                 Console.Write("Please enter the amount of minutes you exercised or type 'quit' to exit: ");
 
+                // FIXME but string is not necessary because the compiler is smart enough to infer the type so just use var
                 string entry = Console.ReadLine();
 
-                if (entry == "quit")
+                if (entry.ToLower() == "quit")
                 {
+                    // FIXME you can just remove this with using break and then the try is no longer necessary
                     keepGoing = false;
                 }
                 else
                 {
                     try
                     {
-                        int minutes = int.Parse(entry);
+                        double minutes = double.Parse(entry);
                         if (minutes <= 0)
                         {
                             Console.WriteLine(minutes + " is not an acceptable value!");
