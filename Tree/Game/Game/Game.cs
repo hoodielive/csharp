@@ -19,11 +19,20 @@ namespace Game
 
             try
             {
-                MapLocation noneMapLocation = new MapLocation(20, 20, map);
+                MapLocation noneMapLocation = new MapLocation(2, 2, map);
+            }
+            catch (OutOfBoundsException)
+            {
+
+               Console.WriteLine(ex.Message); 
+            }
+            catch (GameExceptions)
+            {
+               Console.WriteLine("Unhandled Game Exception"); 
             }
             catch(Exception)
             {
-               Console.WriteLine("Sorry, That map location is not on the map."); 
+                Console.WriteLine("Unhandled Exception");
             }
         }
     }
