@@ -15,6 +15,10 @@ namespace Game
             point = new Point(8, 5);
             isOnMap = map.OnMap(point);
             Console.WriteLine(isOnMap);
+
+            point.DistanceTo(5, 5);
+            
+            Console.WriteLine(point.DistanceTo(5,5));
         }
     }
 }
