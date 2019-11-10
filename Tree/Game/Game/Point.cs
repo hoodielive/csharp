@@ -26,6 +26,9 @@ namespace Game
             int yDiffSquared = yDiff * yDiff;
 
             return (int)Math.Sqrt(xDiffSquared + yDiffSquared);
+
+            // Can be Refactored to below: 
+            // return (int) Math.Sqrt(Math.Pow(X - x, 2) + Math.Pow(Y - y, 2));
         }
     }
     
