@@ -2,11 +2,16 @@
 {
     class Game
     {
-        public void Main()
+        public static void Main()
         {
-            // Tower instance/instantiation
-            Tower tower = new Tower();
+            Map map = new Map();
+            map.Width = 8;
+            map.Height = 5;
+
+            int area = map.Width * map.Height;
             
+            // remember in compilation - game gets Game.exe to change this in mono do the following:
+            // mcs -out:GameDefense.exe *.cs
         }
     }
 }
