@@ -9,7 +9,7 @@ namespace Game
             if (!map.OnMap(this))
             {
                // this = current object 
-               throw new Exception(); 
+               throw new OutOfBoundsException(); 
             }
         }
     }
