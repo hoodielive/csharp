@@ -15,9 +15,12 @@ namespace Game
         {
             // FIXME: We want to make sure that all 4 conditions are true, however, this is ugly.
             
-            bool inBounds = point.X >= 0 && point.X < Width && point.Y >= 0 && point.Y < Height;
+            return point.X >= 0 && point.X < Width && point.Y >= 0 && point.Y < Height;
             
-            return inBounds;
+            //  bool outOfBounds = point.X < 0 || point.X >= Width || point.Y < 0 || point.Y >= Height;
+            //  bool inBounds = !outOfBounds;
+            //  bool inBounds = !(point.X < 0 || point.X >= Width || point.Y < 0 || point.Y >= Height);
+           
         }
     }
 }
