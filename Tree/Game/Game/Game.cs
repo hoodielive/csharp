@@ -19,12 +19,21 @@ namespace Game
 
             try
             {
-                MapLocation noneMapLocation = new MapLocation(2, 2, map);
+                MapLocation[] path =
+                {
+                    new MapLocation(0, 2, map),
+                    new MapLocation(1, 2, map),
+                    new MapLocation(2, 2, map),
+                    new MapLocation(3, 2, map),
+                    new MapLocation(4, 2, map),
+                    new MapLocation(5, 2, map),
+                    new MapLocation(6, 2, map),
+                    new MapLocation(7, 2, map),
+                };
             }
             catch (OutOfBoundsException)
             {
-
-               Console.WriteLine(ex.Message); 
+               Console.WriteLine("Unhandled"); 
             }
             catch (GameExceptions)
             {
@@ -32,7 +41,7 @@ namespace Game
             }
             catch(Exception)
             {
-                Console.WriteLine("Unhandled Exception");
+               Console.WriteLine("Unhandled Exception");
             }
         }
     }
