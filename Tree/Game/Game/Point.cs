@@ -22,8 +22,10 @@ namespace Game
             int xDiff = X - x;
             int yDiff = Y - y;
             
-            xDiffSquared = xDiff * xDiff;
-            yDiffSquared = yDiff * yDiff;
+            int xDiffSquared = xDiff * xDiff;
+            int yDiffSquared = yDiff * yDiff;
+
+            return (int)Math.Sqrt(xDiffSquared + yDiffSquared);
         }
     }
     
