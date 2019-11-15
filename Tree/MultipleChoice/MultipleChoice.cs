@@ -4,22 +4,23 @@ namespace MultipleChoice
 {
 	class Program 
 	{
-		static void Main()
-		{
-
-			Console.Write("What is your favorite Language? ");
-			var fav_lang = Console.ReadLine().ToLower();
-			fav_lang = TryAgain(fav_lang); 
-
-		}
-			static string TryAgain(string fav_lang)
+			static string TryAgain(string question)
 			{
-				if (fav_lang == "")
+				Console.Write("What is your favorite Language? ");
+				question = Console.ReadLine().ToLower();
+				if (question == "")
 				{
 					Console.WriteLine("If you're going to play this game, you have to enter something!");
+					return Console.ReadLine();
 				}
-				return fav_lang;
+				return question;
 			}
-	} 
+
+			static void Main(string[] args)
+			{
+
+			}
+
+	}
 }
 
