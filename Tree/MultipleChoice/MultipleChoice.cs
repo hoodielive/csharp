@@ -15,6 +15,12 @@ namespace MultipleChoice
 
 			Console.WriteLine("You have indicated that your favorite language is: {0} ", fav_lang);
 			Console.WriteLine("You have indicated that your secondary language is {0} ", sec_lang);
+
+
+			if (fav_lang == "C++")
+			{
+				Console.WriteLine("You are a Geek!"); 
+			}
 		}
 	} 
 }
