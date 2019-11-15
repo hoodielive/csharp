@@ -8,6 +8,11 @@ namespace SchoolTracker
 		static void Main(string[] arg)
 		{
 			Console.WriteLine("How many students is in your class?"); 
+			
+			var student = new Student();
+
+			student.Name =  "osameji";
+			Console.WriteLine(student.Name);
 
 			var studentCount = int.Parse(Console.ReadLine()); 
 
