@@ -6,8 +6,12 @@ namespace ArraysForDays
 	{
 		static void Main(string[] args)
 		{
-			var students = new int[] { 80, 77, 47, 100, 83, 99, 85, 72 }; 
-			Console.WriteLine(students);
+			var studentGrades = new int[] { 80, 77, 47, 100, 83, 99, 85, 72 }; 
+
+			foreach(var studentGrade in studentGrades)
+			{
+				Console.WriteLine(studentGrade);
+			}
 		}
 	}
 }
