@@ -44,3 +44,12 @@ namespace SchoolTracker
 		}
 	}
 }
+
+class Student
+{
+	public string Name; 
+	public int Grade; 
+	public string Birthday; 
+	public string Address; 
+	public int Phone; 
+}
