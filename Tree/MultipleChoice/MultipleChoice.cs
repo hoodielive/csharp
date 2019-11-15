@@ -12,13 +12,16 @@ namespace MultipleChoice
 				{
 					Console.WriteLine("If you're going to play this game, you have to enter something!");
 					return Console.ReadLine();
+				} 
+				else 
+				{
+					return question;
 				}
-				return question;
 			}
 
 			static void Main(string[] args)
 			{
-
+				TryAgain("Um.."); 
 			}
 
 	}
