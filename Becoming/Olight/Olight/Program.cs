@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace Olight
@@ -7,15 +8,21 @@ namespace Olight
     {
         static void Main(string[] args)
         {
-            int size = Convert.ToInt32(Console.In.ReadLine());
-            int[] grades = new int[size];
+            int[][] grades = {
+                new int[]{5, 4, 7, 3},
+                new int[]{7, 3, 2, 6},
+                new int[]{5, 7, 3, 3},
+            };
+            Console.WriteLine(grades.Length);
+            Console.WriteLine(grades[1].Length);
+
             for (int i = 0; i < grades.Length; i++)
             {
-                grades[i] = Convert.ToInt32(Console.In.ReadLine());
-            }
-            for (int i = 0; i < grades.Length; i++)
-            {
-                Console.Write(grades[i] + " ");
+                for (int k = 0; k < grades[i].Length; k++)
+                {
+                    Console.Write(grades[i][k] + " ");
+                }
+                Console.WriteLine();
             }
         }
     }
