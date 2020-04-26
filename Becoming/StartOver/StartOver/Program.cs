@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO.Compression;
 using System.Collections.Generic;
+using Microsoft.VisualBasic;
 
 namespace StartOver
 {
@@ -8,8 +9,25 @@ namespace StartOver
     {
         static void Main(string[] args)
         {
-            Int32 x = 5;
-            String x = "Larry";
+            Person person = new Person();
+
+            person.FirstName = "Larry";
+            person.LastName = "Awo";
+            Console.WriteLine("What do you think the name is?");
+            string fullNameGuess = Console.ReadLine();
+
+//            while (person.FullName != fullNameGuess)
+//            {
+//                Console.WriteLine("Guess Again!");
+//            }
+            if (person.FullName == fullNameGuess)
+            {
+                Console.WriteLine("You got the juice!");
+            }
+            else
+            {
+                Console.WriteLine("Guess again..");
+            }
         }
     }
 }
