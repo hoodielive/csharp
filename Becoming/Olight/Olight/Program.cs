@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 
 namespace Olight
 {
@@ -6,11 +7,15 @@ namespace Olight
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Yo noob wuts ur age?");
-            int age = Int32.Parse(Console.ReadLine());
-            if (age > 12)
+            int size = Convert.ToInt32(Console.In.ReadLine());
+            int[] grades = new int[size];
+            for (int i = 0; i < grades.Length; i++)
             {
-                Console.WriteLine("Welcome, youre at least a teenager");
+                grades[i] = Convert.ToInt32(Console.In.ReadLine());
+            }
+            for (int i = 0; i < grades.Length; i++)
+            {
+                Console.Write(grades[i] + " ");
             }
         }
     }
