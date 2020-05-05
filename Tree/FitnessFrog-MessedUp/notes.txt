@@ -1,3 +1,0 @@
-1. Preparation
-2. Plan
-3. Implementation
