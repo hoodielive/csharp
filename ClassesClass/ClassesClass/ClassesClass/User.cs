@@ -7,10 +7,15 @@ namespace ClassesClass
         public string Firstname { get; set; }
         public string Lastname { get; set; }
 
-        public void Output()
+        public string Output(int times)
         {
-            Console.WriteLine(Firstname);
-            Console.WriteLine(Lastname);
+            string message = "";
+            for (int i = 0; i < times; i++)
+            {
+                message += Firstname + " " + Lastname + "\n";
+            }
+
+            return message;
         }
     }
 }
