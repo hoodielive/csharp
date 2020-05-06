@@ -15,8 +15,7 @@ namespace ClassesClass
             User me = new User();
             me.Firstname = "King";
             me.Lastname = "Solomon";
-            string msg = me.Output(4);
-            Console.Write(msg);
+            Console.WriteLine(me.Firstname);
         }
     }
 }
