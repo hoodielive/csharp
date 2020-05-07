@@ -10,10 +10,6 @@ namespace Onibode
            {
                return FirstName + " " + LastName;
            }
-           set
-           {
-               value.Split();
-           }
        }
 
        public string FirstName
@@ -29,7 +25,12 @@ namespace Onibode
            }
        }
        public string LastName { get; set; }
-       public string Output(int times)
+
+       public string Output()
+       {
+           return "My name is " + FullName;
+       }
+       public string Output(int times = 1)
        {
            string message = "";
            for (int i = 0; i < times; i++)
