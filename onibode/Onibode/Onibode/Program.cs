@@ -13,11 +13,6 @@ namespace Onibode
 
         public void doSomething()
         {
-            User user = new User();
-            user.FirstName = "King";
-            user.LastName = "Solomon";
-            
-            Console.WriteLine(user.Output());
         }
     }
 }
