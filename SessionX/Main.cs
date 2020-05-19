@@ -2,13 +2,14 @@ using System;
 
 namespace SessionX 
 {
-	public class SessionX 
+	class SessionX 
 	{
 	
-		public static void Main()
+		static void Main()
 		{
 
-			Console.WriteLine("This is a message from the main class.");
+			public string msg = "This is a message from the main class.";
+			Console.WriteLine(msg);
 		}
 	}
 
