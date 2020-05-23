@@ -2,8 +2,8 @@
 {
     public class MyCar
     {
-        private int topSpeed;
         private string color;
+        private readonly int topSpeed;
 
         public MyCar(int passedTopSpeed, string passedColor)
         {
@@ -22,3 +22,7 @@
         }
     }
 }
+
+MyCar toyota = new MyCar('160', 'red');
+
+Console.WriteLine(toyota.topSpeed);
